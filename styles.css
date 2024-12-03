@@ -1,0 +1,134 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0; /* No gaps between blocks */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0; /* Removed padding */
+}
+
+/* Profile and Image side by side */
+.profile-section {
+  display: grid;
+  grid-template-columns: 254px 1fr; /* Set image width to 254px */
+  background-color: white;
+  color: black;
+  padding: 0;
+  border-radius: 0;
+  grid-column: span 2;
+}
+
+.profile-section img {
+  width: 254px;
+  height: 265px; /* Set image height to 265px */
+  border-radius: 0;
+  object-fit: cover; /* Ensures the image fits the dimensions properly */
+}
+
+.profile-text {
+  padding: 20px;
+}
+
+.profile-text h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.profile-text h2 {
+  color: #f5c542;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.profile-text p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* Left and right section */
+.left,
+.right {
+  background-color: #262626;
+  padding: 20px;
+  border-radius: 0;
+}
+
+.section-title {
+  color: #f5c542;
+  font-size: 18px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #f5c542;
+  padding-bottom: 5px;
+}
+
+.education,
+.experience,
+.expertise,
+.interests {
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  background-color: #333;
+  border-radius: 5px;
+  height: 10px;
+  margin-top: 5px;
+  position: relative;
+}
+
+.progress-bar div {
+  height: 100%;
+  border-radius: 5px;
+  background-color: #f5c542;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.contact img {
+  width: 20px;
+}
+
+a {
+  color: #f5c542;
+}
+
+.interests {
+  text-align: center;
+}
+
+.interests-row {
+  display: flex;
+  justify-content: center; /* Центрируем элементы по горизонтали */
+  gap: 60px; /* Расстояние между элементами */
+  margin-top: 30px;
+}
+
+.interest-item {
+  display: flex;
+  flex-direction: column; /* Располагаем картинку над текстом */
+  align-items: center; /* Центрируем содержимое */
+}
+
+.interest-item img {
+  width: 50px; /* Размер изображения */
+  height: auto;
+  margin-bottom: 5px; /* Отступ между картинкой и текстом */
+}
+
+.interest-item p {
+  font-size: 14px;
+  color: #fff; /* Цвет текста */
+}
